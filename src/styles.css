@@ -9,7 +9,6 @@
 body {
   margin: 0px auto;
   max-width: 1100px;
- 
 }
 
 h1 {
@@ -126,16 +125,21 @@ p {
   margin-top: 130px;
 }
 
-
-@media(max-width: 960px){
-	h1{
-		font-size:44;
-		line-height: 2;
-	}
-	h2{
-		font-size: 44px;
-	}
-	.launch-link{
-		margin-bottom: 20px;
-	}
+@media (max-width: 960px) {
+  h1 {
+    font-size: 44;
+    line-height: 2;
+  }
+  h2 {
+    font-size: 44px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  .launch-link {
+    margin-bottom: 20px;
+  }
+  .about-describe {
+    padding:10px;
+  }
 }
