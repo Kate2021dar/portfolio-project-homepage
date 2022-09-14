@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ride a bike</title>
+	<style>
+		body {
+			margin: 0px;
+			padding: 0px;
+			font-family: Arial, Helvetica, sans-serif;
+	     	background: #ffe9e3;
+		}
+
+		.container {
+			max-width: 700px;
+			margin: 0 auto;
+		}
+
+		h1 {
+			text-align: center;
+			color: #7c73e6; 
+			font-weight: bold;
+			font-size: 35px;
+		}
+
+		h2 {
+			text-align: center;
+	    	background: linear-gradient(90deg, rgb(252, 115, 156) 0%, rgb(139, 102, 241) 100%);
+		    color: white;
+			font-weight: 600;
+			font-size: 25px;
+			border: 1px solid #7c73e6;
+			padding: 15px;
+			font-size: 18px;
+			border-radius: 15px;
+		}
+
+		img {
+			display: block;
+			margin: 0 auto;
+			max-width: 85%;
+			border-radius: 55px;
+		}
+
+		p {
+			line-height: 1.5;
+			font-size: 16px;
+			font-style: italic;
+		  }
+
+    	ul {
+	    	list-style: none;
+	    	padding: 0px;
+		    background: linear-gradient(90deg, rgb(115, 167, 252) 0%, rgb(139, 102, 241) 100%);
+		    border-radius: 50%;
+		    font-weight: 600;
+	      }
+
+	    li {
+		   text-align: center;
+		   margin: 7px 0;
+		   font-size: 16px;
+		   color: antiquewhite;
+	      } 
+
+	    li:hover {
+		    opacity: 0.7;
+			cursor: pointer;
+		}
+
+		.header {
+			display: block;
+			text-align: center;
+			text-decoration: underline;
+			color:white;	
+			font-size: 20px;		
+		}
+
+		a {
+			display: block;
+			font-size: 14px;
+			font-style: italic;
+		    margin: 0 0 20px 0;
+
+		}
+
+	   button {
+			display: block;
+			margin: 20px auto;
+			background: linear-gradient(90deg, rgb(252, 115, 156) 0%, rgb(139, 102, 241) 100%);
+			color: white;
+			font-size: 20px;
+			padding: 20px 30px;
+			border: none;
+			border-radius: 15px;
+			box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.9);
+			transition: all 200ms ease-in-out;
+
+		}
+
+		button:hover {
+			opacity: 0.8;
+			cursor:pointer;
+		}
+
+		.footer {
+			text-align: center;
+			color:darkmagenta;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>
+			<strong>I love to ride a bike </strong>	
+		</h1>
+		<h2>
+			<em>Biking makes you fitter and stronger </em>	
+		</h2>
+        <img src="https://velolive.com/uploads/posts/2017-04/1492761759_polza-ezdi-na-velosipede-01.jpg" alt="">
+		<p>
+          Cycling increases energy consumption - metabolism accelerates, oxygen supply to organs 
+		  and tissues (oxygenation), including muscles and the brain, improves.
+		</p>
+	
+		<hr/>
+		
+		<ul>
+		  <span class="header">	
+			During rides are used:
+          </span>	
+			<li>leg muscles</li>
+			<li>iliac muscles</li>
+			<li>abdominal muscles</li> 		
+			<li>trunk muscles</li>
+			<li>arm muscles</li>
+			<li>shoulder girdle muscles</li>		
+		</ul>
+		<hr/>
+		<br/>
+		<a href="https://en.wikipedia.org/wiki/Cycling"
+			target ="_blank">
+			From Wikipedia, ride a bike 🚴
+		</a>
+       			
+		<button class="answer">
+			👉 Answer the questions 👈
+		</button>
+       
+		<p class="footer"> <em>Coded by Kate Rybina </em> 👩💻</p>
+		<script>
+		function questions() {
+	     let name;
+		 let bike;
+		   do{
+			 name = prompt ("What is your name?");
+		      if (name == "") {
+				alert ("LOOK! 👉 You didn't enter your name.");
+			  }
+			} while (name == "")
+			
+			do{
+			  bike = prompt ("Can you ride a bike? Answer YES or NO");
+			  bike = bike.toLowerCase().trim();
+			  if (bike == "yes" || bike == "no") {
+				break;	
+			  } else {
+				alert ("🛑 ENTER CORRECTLY!!!");
+			  }
+			} while (bike != "yes" || bike != "no")
+
+			if (bike == "yes") {
+				alert ("Super 👍 " + name + 
+				". I hope you enjoy riding the bike 🚲 😃");
+			} else {
+				alert(name + "! You lose a lot 😉");
+			}
+	
+		}
+		let answerQuestions = document.querySelector(".answer");
+		answerQuestions.addEventListener("click",questions);
+	</script> 
+	
+</body>
+</html>
