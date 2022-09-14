@@ -11,6 +11,10 @@ body {
   max-width: 1100px;
 }
 
+.logo{
+	max-height: 50px;
+}
+
 h1 {
   font-size: 48px;
   margin-top: 75px;
@@ -123,6 +127,28 @@ p {
 
 .mt-5 {
   margin-top: 130px;
+}
+
+footer {
+  margin: 60px 0;
+}
+
+footer .social-links {
+  margin: 0 20px;
+  color: var(--first-color);
+  background: var(--second-color);
+  padding:10px 14px;
+  border-radius: 50%;
+  font-size: 18px;
+  transition: all 100ms ease-in-out;;
+}
+
+footer .social-links a{
+	margin:15px 15px;
+}
+footer .social-links a:hover{
+	color:white;
+	background: var(--first-color);
 }
 
 @media (max-width: 960px) {
